@@ -106,7 +106,7 @@ declare module angular {
           * Flushes all pending requests using the trained responses.
           * @param count Number of responses to flush (in the order they arrived). If undefined, all pending requests will be flushed. 
           */
-        flush(count?: number): void;
+        flush(count?: number, skip?: number): void;
         
         /**
           * Resets all request expectations, but preserves all backend definitions.
